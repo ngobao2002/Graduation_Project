@@ -28,12 +28,31 @@ with tf.keras.utils.custom_object_scope({'f1_m': f1_m, 'recall_m': recall_m, 'pr
     model = tf.keras.models.load_model('my_model.h5')
 
 # Categories for classification
-CATEGORIES = ['Adialer.C', 'Agent.FYI', 'Allaple.A', 'Allaple.L', 'Alueron.gen!J', 'Autorun.K',
-              'C2LOP.P', 'C2LOP.gen!g', 'Dialplatform.B', 'Dontovo.A', 'Fakerean', 'Gatak',
-              'Instantaccess', 'Kelihos_ver1', 'Kelihos_ver3', 'Lollipop', 'Lolyda.AA1',
-              'Lolyda.AA2', 'Lolyda.AA3', 'Lolyda.AT', 'Malex.gen!J', 'Obfuscator.ACY',
-              'Obfuscator.AD', 'Rammit', 'Rbot!gen', 'Simda', 'Skintrim.N', 'Swizzor.gen!E',
-              'Swizzor.gen!I', 'Tracur', 'VB.AT', 'Vundo', 'Wintrim.BX', 'Yuner.A']
+CATEGORIES = ['Adialer.C',
+ 'Agent.FYI',
+ 'Allaple.A',
+ 'Allaple.L',
+ 'Alueron.gen!J',
+ 'Autorun.K',
+ 'C2LOP.P',
+ 'C2LOP.gen!g',
+ 'Dialplatform.B',
+ 'Dontovo.A',
+ 'Fakerean',
+ 'Instantaccess',
+ 'Lolyda.AA1',
+ 'Lolyda.AA2',
+ 'Lolyda.AA3',
+ 'Lolyda.AT',
+ 'Malex.gen!J',
+ 'Obfuscator.AD',
+ 'Rbot!gen',
+ 'Skintrim.N',
+ 'Swizzor.gen!E',
+ 'Swizzor.gen!I',
+ 'VB.AT',
+ 'Wintrim.BX',
+ 'Yuner.A']
 
 # Preprocessing function
 def preprocess_image(image):
